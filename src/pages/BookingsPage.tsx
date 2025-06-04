@@ -28,7 +28,7 @@ const BookingsPage = () => {
     const formData = new FormData(form);
 
     try {
-      const response = await fetch('https://formspree.io/f/mdkgqpaz', {
+      const response = await fetch('https://formspree.io/f/xpwrwpyj', {
         method: 'POST',
         headers: { Accept: 'application/json' },
         body: formData,

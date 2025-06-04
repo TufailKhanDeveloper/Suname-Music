@@ -38,7 +38,7 @@ const ContactPage = () => {
     const formData = new FormData(form);
 
     try {
-      const response = await fetch('https://formspree.io/f/mdkgqpaz', {
+      const response = await fetch('https://formspree.io/f/mnnvnpby', {
         method: 'POST',
         headers: {
           'Accept': 'application/json'
