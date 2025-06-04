@@ -37,6 +37,7 @@ const ContactPage = () => {
     const form = e.currentTarget;
     const formData = new FormData(form);
 
+    
     try {
       const response = await fetch('https://formspree.io/f/mnnvnpby', {
         method: 'POST',
