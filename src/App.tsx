@@ -19,7 +19,7 @@ import MusicPage from './pages/MusicPage';
 import NotFound from './pages/NotFound';
 
 function App() {
-  const [showIntro, setShowIntro] = useState(true);
+  const [showIntro, setShowIntro] = useState(false); // Changed from true to false
   const [isDarkRealm, setIsDarkRealm] = useState(false);
 
   useEffect(() => {
@@ -30,9 +30,10 @@ function App() {
     }
   }, [isDarkRealm]);
 
-  if (showIntro) {
-    return <IntroAnimation onComplete={() => setShowIntro(false)} />;
-  }
+  // Removed the intro animation conditional rendering
+  // if (showIntro) {
+  //   return <IntroAnimation onComplete={() => setShowIntro(false)} />;
+  // }
 
   return (
     <div className="relative min-h-screen transition-colors duration-500">
