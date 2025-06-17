@@ -51,7 +51,7 @@ const biography = {
   ],
   designer: {
     name: "JimmyDesigns",
-    twitter: "https://x.com/jamezdesigns"
+    twitter: "https://x.com/Jamez_Designs"
   }
 };
 
