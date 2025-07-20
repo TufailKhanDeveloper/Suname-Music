@@ -366,7 +366,7 @@ const BookingsPage = () => {
           </motion.div>
 
           <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.4 }} className="mt-8 text-center">
-            <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>For direct inquiries:</p>
+            <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-white'}`}>For direct inquiries:</p>
             <motion.a
               href="mailto:sunamebookings@gmail.com"
               className={`inline-flex items-center space-x-2 mt-2 ${isDarkMode ? 'text-purple-400' : 'text-purple-600'}`}
