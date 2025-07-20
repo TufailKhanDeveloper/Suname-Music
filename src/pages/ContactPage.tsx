@@ -161,7 +161,7 @@ const ContactPage = () => {
             transition={{ type: "spring", stiffness: 200 }}
             className="text-4xl md:text-5xl font-bold text-center mb-8 text-purple-500 dark:text-white"
           >
-            <span className="text-purple-500 dark:text-white">Contact SUNAME</span>
+            <span className="text-white dark:text-white">Contact SUNAME</span>
           </motion.h1>
           <div className="grid md:grid-cols-2 gap-8">
             {/* Contact Information Section */}
