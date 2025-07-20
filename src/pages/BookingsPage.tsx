@@ -152,7 +152,7 @@ const BookingsPage = () => {
             <h1 className={`text-4xl md:text-5xl font-bold mb-4 ${isDarkMode ? 'text-white' : 'text-white'}`}>
               Book SUNAME
             </h1>
-            <p className={`text-lg ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+            <p className={`text-lg ${isDarkMode ? 'text-gray-300' : 'text-white'}`}>
               Bring the WAVE movement to your venue
             </p>
           </motion.div>
