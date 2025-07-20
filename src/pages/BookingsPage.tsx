@@ -6,6 +6,8 @@ import { FaXTwitter } from 'react-icons/fa6';
 import { useTheme } from '../context/ThemeContext';
 import AudioVisualizer from '../components/AudioVisualizer';
 import { biography } from '../data/biography';
+import SEOHead from '../components/SEOHead';
+import { musicEventStructuredData } from '../data/structuredData';
 
 type NotificationType = 'success' | 'error';
 
@@ -118,6 +120,16 @@ const BookingsPage = () => {
 
   return (
     <>
+      <SEOHead
+        title="Book SUNAME - DJ Bookings & Live Performances"
+        description="Book SUNAME for your next event. Professional DJ services for clubs, festivals, private events, and corporate functions. Specializing in Tech House, Melodic Techno, and Techno."
+        keywords="book SUNAME, DJ booking, electronic music DJ, club events, music festivals, private events, corporate functions, Florida DJ"
+        image="https://sunamemusic.com/images/artist_main.jpg"
+        url="https://sunamemusic.com/bookings"
+        type="website"
+        structuredData={musicEventStructuredData}
+      />
+      
       <AnimatePresence>
         {notification && (
           <motion.div

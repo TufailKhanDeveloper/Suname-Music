@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import { useTheme } from '../context/ThemeContext';
 import AudioVisualizer from '../components/AudioVisualizer';
 import VinylRecord from '../components/VinylRecord';
+import SEOHead from '../components/SEOHead';
+import { artistStructuredData } from '../data/structuredData';
 
 const biography = {
   mixes: [
@@ -80,6 +82,16 @@ const MixesPage = () => {
       exit={{ opacity: 0 }}
       className="min-h-screen pt-24 pb-12 px-4"
     >
+      <SEOHead
+        title="SUNAME Live Mixes - DJ Sets & Electronic Music Mixes"
+        description="Listen to SUNAME's live DJ mixes and electronic music sets. Experience Tech House, Melodic Techno, and Techno mixes recorded at venues like Elixr Orlando and studio sessions."
+        keywords="SUNAME live mixes, DJ sets, electronic music mixes, tech house mixes, melodic techno sets, techno mixes, Elixr Orlando"
+        image="https://sunamemusic.com/images/artist_main.jpg"
+        url="https://sunamemusic.com/mixes"
+        type="music.album"
+        structuredData={artistStructuredData}
+      />
+      
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ y: -20, opacity: 0 }}

@@ -3,7 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Preconnect to external domains for performance -->
+    <link rel="preconnect" href="https://images.pexels.com">
+    <link rel="preconnect" href="https://soundcloud.com">
+    <link rel="preconnect" href="https://i1.sndcdn.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- DNS prefetch for social media domains -->
+    <link rel="dns-prefetch" href="https://www.instagram.com">
+    <link rel="dns-prefetch" href="https://www.tiktok.com">
+    <link rel="dns-prefetch" href="https://x.com">
+    <link rel="dns-prefetch" href="https://www.youtube.com">
+    <link rel="dns-prefetch" href="https://open.spotify.com">
+    <link rel="dns-prefetch" href="https://music.apple.com">
+    
+    <!-- Favicon and app icons -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Theme color for mobile browsers -->
+    <meta name="theme-color" content="#8B5CF6">
+    <meta name="msapplication-TileColor" content="#8B5CF6">
+    
+    <!-- Basic SEO meta tags (will be overridden by react-helmet-async) -->
+    <meta name="description" content="SUNAME - Electronic music artist and DJ from Florida specializing in Tech House, Melodic Techno, and Techno. Experience the SUNAME WAVE movement.">
+    <meta name="keywords" content="SUNAME, electronic music, DJ, tech house, melodic techno, techno, Florida DJ, electronic dance music, EDM">
+    <meta name="author" content="SUNAME">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph meta tags -->
+    <meta property="og:site_name" content="SUNAME Music">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Critical CSS for above-the-fold content -->
+    <style>
+      .hero-section { 
+        min-height: 100vh; 
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+      }
+      .loading-spinner { 
+        animation: spin 1s linear infinite; 
+      }
+      @keyframes spin { 
+        from { transform: rotate(0deg); } 
+        to { transform: rotate(360deg); } 
+      }
+    </style>
 
     <title>Suname Music – Global Entertainment & Production LLC </title>
     

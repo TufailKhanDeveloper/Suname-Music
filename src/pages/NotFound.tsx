@@ -5,6 +5,7 @@ import { useTheme } from '../context/ThemeContext';
 import { ArrowLeft, Music2 } from 'lucide-react';
 import { biography } from '../data/biography';
 import AudioVisualizer from '../components/AudioVisualizer';
+import SEOHead from '../components/SEOHead';
 
 const NotFound: React.FC = () => {
   const { isDarkMode } = useTheme();
@@ -14,6 +15,16 @@ const NotFound: React.FC = () => {
   }, []);
 
   return (
+    <>
+      <SEOHead
+        title="404 - Page Not Found | SUNAME"
+        description="The page you're looking for doesn't exist. Return to SUNAME's official website to explore electronic music, live mixes, tour dates, and more."
+        keywords="404 error, page not found, SUNAME website"
+        image="https://sunamemusic.com/images/artist_main.jpg"
+        url="https://sunamemusic.com/404"
+        type="website"
+      />
+      
     <motion.div
       className="min-h-screen w-full flex flex-col items-center justify-center px-4" 
       initial={{ opacity: 0 }}
@@ -106,6 +117,7 @@ const NotFound: React.FC = () => {
         </p>
       </motion.section>
     </motion.div>
+    </>
   );
 };
 

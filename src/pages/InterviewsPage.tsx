@@ -4,6 +4,8 @@ import { Mic, Play, ExternalLink } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 import AudioVisualizer from '../components/AudioVisualizer';
 import { biography } from '../data/biography';
+import SEOHead from '../components/SEOHead';
+import { artistStructuredData } from '../data/structuredData';
 
 const interviews = [
   {
@@ -39,6 +41,16 @@ const InterviewsPage = () => {
       exit={{ opacity: 0 }}
       className="min-h-screen pt-24 pb-12 px-4"
     >
+      <SEOHead
+        title="SUNAME Interviews & Media Features - Electronic Music Artist Press"
+        description="Read and watch SUNAME's latest interviews and media features. Get insights into the electronic music artist's journey, production process, and the SUNAME WAVE movement."
+        keywords="SUNAME interviews, electronic music artist interviews, DJ interviews, music producer interviews, SUNAME media features"
+        image="https://sunamemusic.com/images/artist_main.jpg"
+        url="https://sunamemusic.com/interviews"
+        type="website"
+        structuredData={artistStructuredData}
+      />
+      
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ y: -20, opacity: 0 }}

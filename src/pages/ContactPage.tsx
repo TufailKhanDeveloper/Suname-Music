@@ -8,6 +8,8 @@ import { useInView } from 'react-intersection-observer';
 import { IconType } from 'react-icons';
 import { FaSoundcloud, FaInstagram, FaTiktok, FaYoutube, FaSpotify, FaApple } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6'; 
+import SEOHead from '../components/SEOHead';
+import { artistStructuredData } from '../data/structuredData';
 
 type NotificationType = 'success' | 'error';
 
@@ -118,6 +120,16 @@ const ContactPage = () => {
 
   return (
     <>
+      <SEOHead
+        title="Contact SUNAME - Management, Bookings & General Inquiries"
+        description="Get in touch with SUNAME for bookings, management, and general inquiries. Contact information for professional electronic music DJ and producer services."
+        keywords="contact SUNAME, management inquiries, booking contact, electronic music artist contact, DJ contact information"
+        image="https://sunamemusic.com/images/artist_main.jpg"
+        url="https://sunamemusic.com/contact"
+        type="website"
+        structuredData={artistStructuredData}
+      />
+      
       <AnimatePresence>
         {notification && (
           <motion.div

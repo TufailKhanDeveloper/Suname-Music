@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import { Waves } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
 import { biography } from '../data/biography';
+import SEOHead from '../components/SEOHead';
+import { musicEventStructuredData } from '../data/structuredData';
 
 const WaveEventsPage = () => {
   const { isDarkMode } = useTheme();
@@ -14,6 +16,16 @@ const WaveEventsPage = () => {
       exit={{ opacity: 0 }}
       className="min-h-screen pt-24 pb-12 px-4"
     >
+      <SEOHead
+        title="SUNAME WAVE Events - Electronic Music Movement & Experiences"
+        description="Join the SUNAME WAVE movement. Discover upcoming electronic music events and experiences. We are not ravers, we are WAVERS - bringing light into dark places through music."
+        keywords="SUNAME WAVE events, electronic music movement, WAVE experiences, electronic music events, SUNAME movement, wavers not ravers"
+        image="https://sunamemusic.com/images/artist_main.jpg"
+        url="https://sunamemusic.com/wave-events"
+        type="website"
+        structuredData={musicEventStructuredData}
+      />
+      
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ y: -20, opacity: 0 }}

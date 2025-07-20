@@ -4,6 +4,8 @@ import { ExternalLink, Music, Upload, Check } from 'lucide-react';
 import { biography } from '../data/biography';
 import { useTheme } from '../context/ThemeContext';
 import AudioVisualizer from '../components/AudioVisualizer';
+import SEOHead from '../components/SEOHead';
+import { artistStructuredData } from '../data/structuredData';
 
 const DemosPage = () => {
   const { isDarkMode } = useTheme();
@@ -36,6 +38,16 @@ const DemosPage = () => {
       exit={{ opacity: 0 }}
       className="min-h-screen pt-24 pb-12 px-4"
     >
+      <SEOHead
+        title="Submit Your Demo to SUNAME - Electronic Music Demo Submissions"
+        description="Submit your electronic music demos to SUNAME. Send your Tech House, Melodic Techno, and Techno tracks for review. Guidelines and submission requirements included."
+        keywords="submit demo to SUNAME, electronic music demo submission, tech house demos, melodic techno submissions, techno demo review"
+        image="https://sunamemusic.com/images/artist_main.jpg"
+        url="https://sunamemusic.com/demos"
+        type="website"
+        structuredData={artistStructuredData}
+      />
+      
       <div className="max-w-4xl mx-auto text-center">
         <motion.div
           initial={{ y: -20, opacity: 0 }}

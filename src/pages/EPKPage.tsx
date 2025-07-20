@@ -5,6 +5,8 @@ import { FaXTwitter } from 'react-icons/fa6';
 import { Music2, Info, Calendar, Mail, MapPin, Mic } from 'lucide-react';
 import { biography } from '../data/biography';
 import { useTheme } from '../context/ThemeContext';
+import SEOHead from '../components/SEOHead';
+import { artistStructuredData } from '../data/structuredData';
 
 const EPKPage = () => {
   const { isDarkMode } = useTheme();
@@ -50,6 +52,16 @@ const EPKPage = () => {
       exit={{ opacity: 0 }}
       className="min-h-screen pt-24 pb-12 px-4"
     >
+      <SEOHead
+        title="SUNAME Electronic Press Kit (EPK) - Artist Biography & Media"
+        description="Official Electronic Press Kit for SUNAME. Download high-resolution photos, artist biography, technical requirements, and media information for press and booking purposes."
+        keywords="SUNAME EPK, electronic press kit, artist biography, press photos, media kit, booking information, artist technical requirements"
+        image="https://sunamemusic.com/images/artist_main.jpg"
+        url="https://sunamemusic.com/epk"
+        type="profile"
+        structuredData={artistStructuredData}
+      />
+      
       <div className="max-w-6xl mx-auto">
         {/* EPK Page Title */}
         <motion.div
