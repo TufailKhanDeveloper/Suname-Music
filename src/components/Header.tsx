@@ -81,7 +81,7 @@ const Header: React.FC<HeaderProps> = ({ isDarkRealm }) => {
               </motion.h1>
               <motion.p
                 className={`text-xs ${
-                  isDarkRealm ? 'text-gray-300' : 'text-gray-600'
+                  isDarkRealm ? 'text-gray' : 'text-gray-600'
                 }`}
               >
                 GLOBAL ENTERTAINMENT & PRODUCTION LLC
