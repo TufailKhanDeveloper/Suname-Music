@@ -59,12 +59,12 @@ const InterviewsPage = () => {
           className="text-center mb-12"
         >
           <h1 className={`text-4xl md:text-5xl font-bold mb-4 ${
-            isDarkMode ? 'text-white' : 'text-gray-900'
+            isDarkMode ? 'text-white' : 'text-white'
           }`}>
             Interviews & Media
           </h1>
           <p className={`text-lg ${
-            isDarkMode ? 'text-gray-300' : 'text-gray-700'
+            isDarkMode ? 'text-white' : 'text-white'
           }`}>
             Get to know SUNAME through exclusive interviews and features
           </p>
