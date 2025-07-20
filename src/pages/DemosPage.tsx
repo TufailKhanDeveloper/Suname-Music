@@ -55,7 +55,7 @@ const DemosPage = () => {
           transition={{ delay: 0.2 }}
         >
           <h1 className={`text-4xl md:text-5xl font-bold mb-4 ${
-            isDarkMode ? 'text-white' : 'text-gray-900'
+            isDarkMode ? 'text-white' : 'text-white'
           }`}>
             Submit Your Demo
           </h1>
