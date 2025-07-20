@@ -52,7 +52,7 @@ const NotFound: React.FC = () => {
           </motion.div>
 
           <motion.h1
-            className={`text-4xl font-bold mb-4 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}
+            className={`text-4xl font-bold mb-4 ${isDarkMode ? 'text-white' : 'text-white'}`}
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.3 }}
@@ -61,7 +61,7 @@ const NotFound: React.FC = () => {
           </motion.h1>
 
           <motion.p
-            className={`text-lg mb-8 ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}
+            className={`text-lg mb-8 ${isDarkMode ? 'text-gray-300' : 'text-white'}`}
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.4 }}
