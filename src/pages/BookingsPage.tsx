@@ -149,7 +149,7 @@ const BookingsPage = () => {
             transition={{ delay: 0.2 }}
             className="text-center mb-12"
           >
-            <h1 className={`text-4xl md:text-5xl font-bold mb-4 ${isDarkMode ? 'text-white' : 'text-gray-900'}`}>
+            <h1 className={`text-4xl md:text-5xl font-bold mb-4 ${isDarkMode ? 'text-white' : 'text-white'}`}>
               Book SUNAME
             </h1>
             <p className={`text-lg ${isDarkMode ? 'text-gray-300' : 'text-gray-700'}`}>
