@@ -100,7 +100,7 @@ const MixesPage = () => {
           className="text-center mb-12"
         >
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-purple-500 dark:text-white">
-            <span className="text-white dark:text-white">Live Mixes</span>
+            <span className="text-purple dark:text-white">Live Mixes</span>
           </h1>
           <p className="text-lg text-purple-500 dark:text-white">
             <span className="text-purple-500 dark:text-white">Experience the journey through sound</span>
