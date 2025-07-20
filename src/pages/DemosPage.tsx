@@ -60,7 +60,7 @@ const DemosPage = () => {
             Submit Your Demo
           </h1>
           <p className={`text-lg mb-8 ${
-            isDarkMode ? 'text-gray-300' : 'text-gray-700'
+            isDarkMode ? 'text-gray-300' : 'text-white'
           }`}>
             Ready to share your music with SUNAME?
           </p>
