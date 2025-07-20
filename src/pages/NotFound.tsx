@@ -117,9 +117,8 @@ const NotFound: React.FC = () => {
         </p>
       </motion.section>
     </motion.div>
+    </>
   );
 };
 
 export default NotFound;
-  )
-}
