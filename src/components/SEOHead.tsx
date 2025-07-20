@@ -9,6 +9,7 @@ interface SEOHeadProps {
   url?: string;
   type?: 'website' | 'music.song' | 'music.album' | 'profile';
   structuredData?: object;
+  noIndex?: boolean;
 }
 
 const SEOHead: React.FC<SEOHeadProps> = ({
@@ -18,7 +19,8 @@ const SEOHead: React.FC<SEOHeadProps> = ({
   image = "https://sunamemusic.com/images/artist_main.jpg",
   url = "https://sunamemusic.com",
   type = "website",
-  structuredData
+  structuredData,
+  noIndex = false
 }) => {
   const fullTitle = title.includes('SUNAME') ? title : `${title} | SUNAME`;
   
@@ -29,11 +31,14 @@ const SEOHead: React.FC<SEOHeadProps> = ({
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
       <meta name="author" content="SUNAME" />
-      <meta name="robots" content="index, follow" />
+      <meta name="robots" content={noIndex ? "noindex, nofollow" : "index, follow"} />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       
       {/* Canonical URL */}
       <link rel="canonical" href={url} />
+      
+      {/* Language Declaration */}
+      <html lang="en" />
       
       {/* Open Graph Meta Tags */}
       <meta property="og:title" content={fullTitle} />
@@ -72,6 +77,10 @@ const SEOHead: React.FC<SEOHeadProps> = ({
       <meta name="music-genre" content="Electronic, Tech House, Melodic Techno, Techno" />
       <meta name="artist-location" content="Florida, USA" />
       <meta name="booking-email" content="sunamebookings@gmail.com" />
+      
+      {/* Accessibility and Performance */}
+      <meta name="theme-color" content="#8B5CF6" />
+      <meta name="color-scheme" content="light dark" />
       
       {/* Structured Data */}
       {structuredData && (

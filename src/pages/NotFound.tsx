@@ -23,6 +23,7 @@ const NotFound: React.FC = () => {
         image="https://sunamemusic.com/images/artist_main.jpg"
         url="https://sunamemusic.com/404"
         type="website"
+        noIndex={true}
       />
       
     <motion.div
@@ -82,8 +83,8 @@ const NotFound: React.FC = () => {
         >
           <Link to="/">
             <motion.button
-              className={`px-6 py-3 rounded-full ${
-                isDarkMode 
+          <p className="text-sm font-bold text-purple-500 dark:text-white">
+            <span className="text-purple-500 dark:text-white">Artwork & Website by</span>{' '}
                   ? 'bg-primary-600 hover:bg-primary-500' 
                   : 'bg-primary-500 hover:bg-primary-400'
               } text-white flex items-center justify-center mx-auto`}

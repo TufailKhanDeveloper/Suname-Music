@@ -121,6 +121,8 @@ const Header: React.FC<HeaderProps> = ({ isDarkRealm }) => {
                           : isActive ? 'text-primary-600' : 'text-gray-700 hover:text-black'
                       }`}
                       whileHover={{ y: -2 }}
+                      role="menuitem"
+                      aria-current={isActive ? 'page' : undefined}
                     >
                       {item.title}
                     </motion.span>

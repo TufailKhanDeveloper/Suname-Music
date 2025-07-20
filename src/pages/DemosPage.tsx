@@ -205,8 +205,8 @@ const DemosPage = () => {
           transition={{ delay: 0.8 }}
           className="text-center mt-12"
         >
-          <p className="text-sm font-bold text-white">
-            Artwork & Website by{' '}
+          <p className="text-sm font-bold text-purple-500 dark:text-white">
+            <span className="text-purple-500 dark:text-white">Artwork & Website by</span>{' '}
             <a
               href={biography.designer.twitter}
               target="_blank"

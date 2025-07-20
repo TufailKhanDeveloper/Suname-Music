@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -29,12 +29,14 @@
     <!-- Theme color for mobile browsers -->
     <meta name="theme-color" content="#8B5CF6">
     <meta name="msapplication-TileColor" content="#8B5CF6">
+    <meta name="color-scheme" content="light dark">
     
     <!-- Basic SEO meta tags (will be overridden by react-helmet-async) -->
     <meta name="description" content="SUNAME - Electronic music artist and DJ from Florida specializing in Tech House, Melodic Techno, and Techno. Experience the SUNAME WAVE movement.">
     <meta name="keywords" content="SUNAME, electronic music, DJ, tech house, melodic techno, techno, Florida DJ, electronic dance music, EDM">
     <meta name="author" content="SUNAME">
     <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://sunamemusic.com/">
     
     <!-- Open Graph meta tags -->
     <meta property="og:site_name" content="SUNAME Music">
@@ -54,6 +56,23 @@
       @keyframes spin { 
         from { transform: rotate(0deg); } 
         to { transform: rotate(360deg); } 
+      }
+      /* Accessibility improvements */
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+      /* Focus indicators */
+      *:focus {
+        outline: 2px solid #8B5CF6;
+        outline-offset: 2px;
       }
     </style>
 

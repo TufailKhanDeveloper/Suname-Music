@@ -99,15 +99,11 @@ const MixesPage = () => {
           transition={{ delay: 0.2 }}
           className="text-center mb-12"
         >
-          <h1 className={`text-4xl md:text-5xl font-bold mb-4 ${
-            isDarkMode ? 'text-white' : 'text-gray-900'
-          }`}>
-            Live Mixes
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-purple-500 dark:text-white">
+            <span className="text-purple-500 dark:text-white">Live Mixes</span>
           </h1>
-          <p className={`text-lg ${
-            isDarkMode ? 'text-gray-300' : 'text-gray-700'
-          }`}>
-            Experience the journey through sound
+          <p className="text-lg text-purple-500 dark:text-white">
+            <span className="text-purple-500 dark:text-white">Experience the journey through sound</span>
           </p>
         </motion.div>
 
@@ -258,10 +254,8 @@ const MixesPage = () => {
           transition={{ delay: 0.6 }}
           className="text-center mt-12"
         >
-          <p className={`text-sm font-bold ${
-            isDarkMode ? 'text-white' : 'text-gray-800'
-          }`}>
-            Artwork & Website by{' '}
+          <p className="text-sm font-bold text-purple-500 dark:text-white">
+            <span className="text-purple-500 dark:text-white">Artwork & Website by</span>{' '}
             <a
               href={biography.designer.twitter}
               target="_blank"

@@ -374,10 +374,8 @@ const BookingsPage = () => {
                   <Send size={18} className={isSubmitting ? 'animate-spin' : ''} />
                 </motion.button>
               </motion.form>
-            </div>
-          </motion.div>
-
-          <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.4 }} className="mt-8 text-center">
+          <p className="text-sm font-bold text-purple-500 dark:text-white">
+            <span className="text-purple-500 dark:text-white">Artwork & Website by</span>{' '}
             <p className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-600'}`}>For direct inquiries:</p>
             <motion.a
               href="mailto:sunamebookings@gmail.com"
