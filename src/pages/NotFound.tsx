@@ -105,7 +105,7 @@ const NotFound: React.FC = () => {
         transition={{ delay: 0.8 }}
         className="text-center mt-12"
       >
-        <p className={`text-sm font-bold ${isDarkMode ? 'text-white' : 'text-gray-800'}`}> {}
+        <p className={\`text-sm font-bold ${isDarkMode ? 'text-white' : 'text-gray-800'}`}> {}
           Artwork & Website by{' '}
           <a
             href={biography.designer.twitter}
@@ -119,6 +119,7 @@ const NotFound: React.FC = () => {
       </motion.section>
     </motion.div>
     </>
+  )
   );
 };
 
