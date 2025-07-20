@@ -658,7 +658,7 @@ const HomePage: React.FC<HomePageProps> = React.memo(({ isDarkRealm }) => {
           viewport={{ once: true, amount: 0.8 }}
           transition={prefersReducedMotion ? { duration: 0.4, delay: 0.1 } : { duration: 0.8, ease: [0.2, 0.8, 0.2, 1], delay: 0.2 }}
         >
-          <span className="text-purple-500 dark:text-white">Artwork & Website by</span>{' '}
+          <span className="text-white dark:text-white">Artwork & Website by</span>{' '}
           <motion.a
             href={biography.designer.twitter}
             target="_blank"
